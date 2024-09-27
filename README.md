@@ -192,3 +192,209 @@ print(" ")
 ![image](https://github.com/user-attachments/assets/899890d9-5e9a-4067-a9a1-43538886cef5)
 
 #Codigo 4
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+print("Elicserio Martínez Dylan Aaron 3°W #Control:1179 este es mi examen")#imprime en la pantalla mi nombre completo, grado y grupo mas mi numero de control
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+# Función para calcular el perímetro y el área de un rectángulo
+
+def calcular_rectangulo(base, altura):
+
+    # Calcula el área del rectángulo
+    
+    area = base * altura
+    
+    # Calcula el perímetro del rectángulo
+    
+    perimetro = 2 * (base + altura)
+    
+    return area, perimetro
+
+# Solicitar al usuario que ingrese la base y la altura
+
+try:
+
+    base = float(input("Ingrese la base del rectángulo (b): "))
+    
+    altura = float(input("Ingrese la altura del rectángulo (h): "))
+    
+    # Llamar a la función para calcular área y perímetro
+    
+    area, perimetro = calcular_rectangulo(base, altura)
+    
+    # Mostrar los resultados
+    
+    print(f"Área del rectángulo: {area}")
+    
+    print(f"Perímetro del rectángulo: {perimetro}")
+
+except ValueError:
+
+    print("Por favor, ingrese valores numéricos válidos.")
+
+ ![image](https://github.com/user-attachments/assets/08498da6-f0af-4b14-9a18-070039cbd8a5)
+ ![image](https://github.com/user-attachments/assets/db890b06-b83c-435d-b62c-a6628accc06b)
+
+#Codigo 5
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+print("Elicserio Martínez Dylan Aaron 3°W #Control:1179 este es mi examen")#imprime en la pantalla mi nombre completo, grado y grupo mas mi numero de control
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+#favor de ingresar un numero
+
+#practica de menor a la primera docena 1-12
+
+numero=int(input("ingrese un numero:"))#instruccion if,else para determinar
+
+#proseso if else pqara verificar que es correcto
+
+if numero == 12:#numero limite #if
+
+    print("el numero es igual a cero")
+    
+elif numero < 12:
+
+    print("esta bien ")#si el numero es menor a 12 esta bien
+
+else:#else
+
+    print("pasa el limite establecido")#sale si el numero indicado es mayor a 12
+
+![image](https://github.com/user-attachments/assets/b0fd8eea-0688-4b82-8d45-890c339ed750)
+![image](https://github.com/user-attachments/assets/c3c7577a-dcd7-49e6-a1ad-c9b1c5b37ef7)
+
+#Codigo 6
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+print("Elicserio Martínez Dylan Aaron 3°W #Control:1179 este es mi examen")#imprime en la pantalla mi nombre completo, grado y grupo mas mi numero de control
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+#solicitar al usuario que ingrese un numero
+
+numero=int(input("ingrese un numero:"))
+
+#verificar si el numero es 0
+
+if numero == 0:
+
+    print("el mumero es cero.")
+    
+#verficar si el numero es par
+
+elif numero % 2 == 0:
+
+    print("el numero es par")
+    
+#si este numero es par,sera impar
+
+else:
+
+    print("el numero es impar")
+
+![image](https://github.com/user-attachments/assets/d7caa272-0b44-476b-8925-ba5de8c14919)
+![image](https://github.com/user-attachments/assets/8c9375c3-a0c6-4cbb-887e-b3b270ae6adf)
+
+#Codigo 7
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+print("Elicserio Martínez Dylan Aaron 3°W #Control:1179 este es mi examen")#imprime en la pantalla mi nombre completo, grado y grupo mas mi numero de control
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+# Solicitar un número entero al usuario
+
+numero = int(input("Ingresar un número entero porfavor: "))
+
+# Verificar si el número es divisible por 7 y mayor a 40
+
+if numero > 40 and numero % 7 == 0:
+
+    print(f"este número {numero} es divisible por 7 y es mayor a 40.")
+    
+else:
+
+    print(f"este número {numero} no cumple con las condiciones.")
+    
+![image](https://github.com/user-attachments/assets/7656ad73-e624-49cb-92d3-771f470638fb)
+
+![image](https://github.com/user-attachments/assets/45d76ce9-a825-4eeb-a3c5-43eac1e132ed)
+
+#Codigo 8
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+print("Elicserio Martínez Dylan Aaron 3°W #Control:1179 este es mi examen")#imprime en la pantalla mi nombre completo, grado y grupo mas mi numero de control
+
+print(" ")#imprime un espacio en blanco en la pantalla
+
+# Programa para calcular el factorial de un número entero
+
+# Función para calcular el factorial de un número
+
+def calcular_factorial(n):
+
+    # Inicializar el resultado del factorial en 1
+    
+    factorial = 1
+    
+    # Calcular el factorial usando un bucle
+    
+    for i in range(1, n + 1):
+    
+        factorial *= i  # Multiplicar el resultado por cada número desde 1 hasta n
+    
+    return factorial
+
+# Función principal del programa
+
+def main():
+
+    try:
+    
+        # Solicitar al usuario que ingrese un número entero
+        
+        n = int(input("Ingrese un número entero para calcular su factorial: "))
+        
+        # Verificar si el número es no negativo
+        
+        if n < 0:
+        
+            print("El factorial no está definido para números negativos.")
+            
+        else:
+        
+            # Llamar a la función para calcular el factorial
+            
+            resultado = calcular_factorial(n)
+            
+            # Mostrar el resultado
+            
+            print(f"El factorial de {n} es {resultado}.")
+    
+    except ValueError:
+    
+        # Manejo de errores si el usuario no ingresa un número válido
+        
+        print("Por favor, ingrese un número entero válido.")
+
+# Llamar a la función principal
+
+main()
+
+
+![image](https://github.com/user-attachments/assets/96762f11-030e-43bc-9243-8c5a2e97e632)
+
+![image](https://github.com/user-attachments/assets/087f4109-c198-412c-b93e-348d44d3789c)
+
+![image](https://github.com/user-attachments/assets/4a044e83-fb73-4efa-9c26-2be5268a3b29)
+
+![image](https://github.com/user-attachments/assets/dd73157b-70cb-487e-820c-325f72d2053b)
